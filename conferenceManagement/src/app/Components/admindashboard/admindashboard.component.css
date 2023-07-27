@@ -1,0 +1,16 @@
+.div-table{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.reject-button{
+    margin-left:110px;
+}
+.nav-item{
+    list-style: none;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-right:30px;
+    margin-left:0;
+}

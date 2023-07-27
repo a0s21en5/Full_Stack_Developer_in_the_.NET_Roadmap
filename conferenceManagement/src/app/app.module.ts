@@ -34,6 +34,10 @@ import { AdmindashboardComponent } from './Components/admindashboard/admindashbo
       {
         path:'sign-up',
         component:SignUpComponent
+      },
+      {
+        path:'admindashboard',
+        component:AdmindashboardComponent
       }
     ])
   ],
