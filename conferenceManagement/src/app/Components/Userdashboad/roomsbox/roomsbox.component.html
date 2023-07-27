@@ -1,14 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Caladea|Crete+Round|Merriweather|Mitr&display=swap"
     rel="stylesheet">
 
-
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-
-
-
 
 <section id="Rooms">
 
@@ -24,53 +18,24 @@
 
         </div>
 
-        <div class="row">
+        <form class="row">
 
-            <div class="col-lg-3 card">
+            <div *ngFor="let item of displayAllRoom" class="col-lg-3 card">
 
-                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9vbXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="">
-
-                <h2>STANDARD ROOM – ONE KING BED</h2>
-
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-
+                <img src="{{item.image}}" alt="Item Image">
+                <h2>
+                    <td>{{item.roomName}}</td>
+                </h2>
+                <h2>
+                    <td>{{item.capacity}}</td>
+                </h2>
+                <!-- <h2>{{item.isAVRoom}}</h2> -->
+                <td *ngIf="item.isAVRoom == true">AV Room Supported</td>
+                <td *ngIf="item.isAVRoom != true">AV Not Supported</td>
+                <button [routerLink]="['/roomsbox',item.roomId]">Book Room</button>
             </div>
 
-            <div class="col-lg-3 card">
-
-                <img src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9vbXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="">
-
-                <h2>STANDARD ROOM – ONE KING BED</h2>
-
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-
-            </div>
-
-            <div class="col-lg-3 card">
-
-                <img src="https://plus.unsplash.com/premium_photo-1675615949585-36aaf4cb778d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHJvb21zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="">
-
-                <h2>STANDARD ROOM – ONE KING BED</h2>
-
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-
-            </div>
-
-            <div class="col-lg-3 card">
-
-                <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHJvb21zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="">
-
-                <h2>STANDARD ROOM – ONE KING BED</h2>
-
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-
-            </div>
-
-        </div>
+        </form>
 
     </div>
 

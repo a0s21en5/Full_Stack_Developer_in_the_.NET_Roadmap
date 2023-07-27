@@ -24,7 +24,7 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
     FooterComponent,
     MainUserDashboardComponent,
     ContactComponent,
-    RoomsboxComponent
+    RoomsboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +60,7 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
         component: ContactComponent
       },
       {
-        path: 'roomsbox',
+        path: 'roomsbox/:id',
         component: RoomsboxComponent
       }
     ])
