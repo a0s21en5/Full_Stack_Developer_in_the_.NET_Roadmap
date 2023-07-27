@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/Model/User/user';
 
 @Component({
@@ -9,21 +10,33 @@ import { User } from 'src/app/Model/User/user';
   styleUrls: ['./editprofile.component.css']
 })
 export class EditprofileComponent implements OnInit {
- 
-  user:User
-  constructor(private http:HttpClient,private activatedRoute:ActivatedRoute) 
-  {
-    this.user=new User()
+
+  user: User
+  constructor(private http: HttpClient, private activatedRoute: ActivatedRoute, private router: Router) {
+    this.user = new User()
   }
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.params['id'];
-    this.GetUserById(id)
+    const id = this.activatedRoute.snapshot.params[''];
+    const email = localStorage.getItem('UserEmail')
+    this.GetUserByEmail(email)
   }
-  
-  GetUserById(id: any) {
-    this.http.get<User>("https://localhost:44325/api/User/GetUserById?user_Id="+id).subscribe(res=>{
-      this.user=res
+
+
+  GetUserByEmail(email: string | null) {
+    this.http.get<User>("https://localhost:44325/api/User/GetUserByEmail?email=" + email).subscribe(result => {
+      console.warn(result)
+      this.user = result
     })
+  }
+
+  Editprofile() {
+    this.http.put<boolean>("https://localhost:44325/api/User/EditUser?user_Id=" + this.user.user_Id, this.user).subscribe(result => {
+      console.warn(result)
+    })
+  }
+
+  Cancel() {
+    this.router.navigate(['/main-user-dashboard'])
   }
 }
