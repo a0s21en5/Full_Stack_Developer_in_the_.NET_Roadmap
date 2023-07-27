@@ -1,0 +1,192 @@
+.icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+  #index-banner{
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+  }
+
+  #second-banner{
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+  }
+
+  nav .brand-logo, nav a, nav ul a {
+    color: white;
+  }
+
+  .body{
+      background-color: #e8eaf6 ;
+  }
+  
+  .body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+
+
+/*LOGIM.HTML*/
+#body_login {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main_login {
+  flex: 1 0 auto;
+}
+
+#body_login {
+  background: #fff;
+}
+
+/*FORM*/
+
+.input-field input[type=date]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=password]:focus+label {
+  color: #1a237e ;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #1a237e ;
+  box-shadow: none;
+}
+
+ /* Inactive/Active Default input field color */
+ .input-field input[type]:not([readonly]),
+ .input-field input[type]:focus:not([readonly]),
+ .input-field textarea:not([readonly]),
+ .input-field textarea:focus:not([readonly]) {
+     border-bottom: 1px solid #1a237e ;
+     box-shadow: 0 1px 0 0 #1a237e ;
+ }
+
+ /* Inactive/Active Default input label color */
+ .input-field input[type]:focus:not([readonly])+label,
+ .input-field textarea:focus:not([readonly])+label {
+     color: #1a237e ;
+ }
+
+ /* Active/Inactive Invalid input field colors */
+ .input-field input[type].invalid,
+ .input-field input[type].invalid:focus,
+ .input-field textarea.invalid,
+ .input-field textarea.invalid:focus {
+     border-bottom: 1px solid #1a237e ;
+     box-shadow: 0 1px 0 0 #1a237e ;
+ }
+
+ /* Active/Inactive Invalid input label color */
+ .input-field input[type].invalid:focus+label,
+ .input-field input[type].invalid~.helper-text::after,
+ .input-field input[type].invalid:focus~.helper-text::after, 
+ .input-field textarea.invalid:focus+label,
+ .input-field textarea.invalid~.helper-text::after,
+ .input-field textarea.invalid:focus~.helper-text::after {
+     color: #1a237e ;
+ }
+
+ /* Active/Inactive Valid input field color */
+ .input-field input[type].valid,
+ .input-field input[type].valid:focus,
+ .input-field textarea.valid,
+ .input-field textarea.valid:focus {
+     border-bottom: 1px solid #1a237e ;
+     box-shadow: 0 1px 0 0 #1a237e ;
+ }
+
+ /* Active/Inactive Valid input label color */
+ .input-field input[type].valid:focus+label,
+ .input-field input[type].valid~.helper-text::after,
+ .input-field input[type].valid:focus~.helper-text::after,
+ .input-field textarea.valid:focus+label,
+ .input-field textarea.valid~.helper-text::after,
+ .input-field textarea.valid:focus~.helper-text::after {
+     color: #1a237e ;
+ }
+
+ .dropdown-content li>a, .dropdown-content li>span{
+   color: #1a237e;
+ }
+
+ .datepicker-date-display{
+   background-color: #1a237e;
+ }
+
+ .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done{
+   color: #1a237e;
+ }
+
+ .datepicker-table td.is-selected{
+   color: white;
+   background-color: #1a237e;
+ }
+
+
+ *{padding: 0; margin: 0; box-sizing: border-box;}
+ 
+  header {
+      background: url(https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+      text-align: center;
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0 0 85% 85% / 30%;
+  }
+  header .overlay{
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #333;
+    /* background-image: linear-gradient( 135deg, #8c49b669 10%, #ec864f6b 100%);  */
+      
+  }
+  
+  h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 80px;
+      margin-bottom: 30px;
+  }
+  
+  p {
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+  }
+  
+  button {
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #333;
+      background: #fff;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 20px 0 #0000003b;
+  }
+  button:hover{
+      cursor: pointer;
+  }
+ 

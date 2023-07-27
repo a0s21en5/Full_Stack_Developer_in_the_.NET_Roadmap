@@ -18,8 +18,16 @@ export class LoginComponent {
   }
 
   Login() {
-    this.http.post<User>("https://localhost:44325/api/Login/Login", this.login).subscribe(result => {
-     
+    this.http.post<User>("https://localhost:44325/api/Login/loginUser", this.login).subscribe(result => {
+      console.warn(result)
+
+      let jsonObject = JSON.stringify(result);
+      let jsonToken = JSON.parse(jsonObject);
+
+      localStorage.setItem('UserEmail', jsonToken["Email"]);
+      if(result){
+        this.router.navigate(['/main-user-dashboard'])
+      }
     })
   }
 
