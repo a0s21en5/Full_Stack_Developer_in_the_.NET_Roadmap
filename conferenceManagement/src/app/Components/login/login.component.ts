@@ -19,10 +19,7 @@ export class LoginComponent {
 
   Login() {
     this.http.post<User>("https://localhost:44325/api/Login/Login", this.login).subscribe(result => {
-      console.warn(result)
-      if (result) {
-        this.router.navigate(['/'])
-      }
+     
     })
   }
 
