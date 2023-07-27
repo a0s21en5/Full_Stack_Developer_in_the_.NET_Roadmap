@@ -13,7 +13,7 @@ export class RoomsboxComponent {
 
   constructor(private http: HttpClient) {
     this.http.get<ConferenceRoom[]>("https://localhost:44325/api/User/DisplayAllRoom").subscribe(result => {
-      console.warn(result)
+      // console.warn(result)
       this.displayAllRoom = result;
     })
   }

@@ -13,6 +13,7 @@ import { FooterComponent } from './Components/Userdashboad/footer/footer.compone
 import { MainUserDashboardComponent } from './Components/Userdashboad/main-user-dashboard/main-user-dashboard.component';
 import { ContactComponent } from './Components/Userdashboad/contact/contact.component';
 import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.component';
+import { EditprofileComponent } from './Components/Userdashboad/editprofile/editprofile.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
     MainUserDashboardComponent,
     ContactComponent,
     RoomsboxComponent,
+    EditprofileComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
     FormsModule,
     RouterModule.forRoot([
       {
-        path: 'home',
+        path: '',
         component: HomeComponent
       },
       {
@@ -52,7 +54,7 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
         component: FooterComponent
       },
       {
-        path: '',
+        path: 'main-user-dashboard',
         component: MainUserDashboardComponent
       },
       {
@@ -62,13 +64,14 @@ import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.c
       {
         path: 'roomsbox/:id',
         component: RoomsboxComponent
-      }
+      },
+      {
+        path: 'editprofile',
+        component: EditprofileComponent
+      },
     ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-// main-user-dashboard
