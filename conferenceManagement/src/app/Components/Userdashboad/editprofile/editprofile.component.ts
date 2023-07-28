@@ -17,7 +17,6 @@ export class EditprofileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.params[''];
     const email = localStorage.getItem('UserEmail')
     this.GetUserByEmail(email)
   }
