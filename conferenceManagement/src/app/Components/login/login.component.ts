@@ -21,7 +21,7 @@ export class LoginComponent {
 
   Login() {
     this.http.post<User>("https://localhost:44325/api/Login/loginUser", this.login).subscribe(result => {
-      console.log("hii");
+      
     // console.warn(result)
 
       let jsonObject = JSON.stringify(result);
@@ -35,7 +35,6 @@ export class LoginComponent {
   }
 
   AddUser(){
-    console.log("hii");
     
     this.http.post<boolean>('https://localhost:44325/api/User/AddUser',this.user).subscribe(result=>{
       console.warn(result)
