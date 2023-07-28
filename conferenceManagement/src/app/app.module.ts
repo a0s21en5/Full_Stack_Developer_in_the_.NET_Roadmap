@@ -8,7 +8,6 @@ import { LoginComponent } from './Components/login/login.component';
 import { SignUpComponent } from './Components/sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AdmindashboardComponent } from './Components/admindashboard/admindashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { AdmindashboardComponent } from './Components/admindashboard/admindashbo
     HomeComponent,
     LoginComponent,
     SignUpComponent,
-    AdmindashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,10 +32,6 @@ import { AdmindashboardComponent } from './Components/admindashboard/admindashbo
       {
         path:'sign-up',
         component:SignUpComponent
-      },
-      {
-        path:'admindashboard',
-        component:AdmindashboardComponent
       }
     ])
   ],
