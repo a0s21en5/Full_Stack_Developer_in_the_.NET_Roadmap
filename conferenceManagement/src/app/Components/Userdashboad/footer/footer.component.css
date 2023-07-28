@@ -1,0 +1,26 @@
+main {
+    flex: 1 0 auto;
+  }
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.page-footer{
+  background: linear-gradient(to top, #2e1aa3 0%, #67a9b9 100%);
+}
+
+/*ADMIN.HTML*/
+
+#cabeza-admin, #main_admin, #pie-admin {
+	padding-left: 300px;
+}
