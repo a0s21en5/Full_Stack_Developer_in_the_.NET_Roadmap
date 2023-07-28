@@ -23,12 +23,8 @@
             <div *ngFor="let item of displayAllRoom" class="col-lg-3 card">
 
                 <img src="{{item.image}}" alt="Item Image">
-                <h2>
-                    <td>{{item.roomName}}</td>
-                </h2>
-                <h2>
-                    <td>{{item.capacity}}</td>
-                </h2>
+                <h2>{{item.roomName}} </h2>
+                <h2><td>{{item.capacity}}</td></h2>
                 <!-- <h2>{{item.isAVRoom}}</h2> -->
                 <td *ngIf="item.isAVRoom == true">AV Room Supported</td>
                 <td *ngIf="item.isAVRoom != true">AV Not Supported</td>
@@ -55,16 +51,18 @@
 
                 <div class="title_min"></div>
 
-                <p>Inspiration can be found everywhere</p>
+                <p>Conference Management</p>
 
             </div>
 
             <div class="col-lg-6">
 
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus
-                    commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Praesent
-                    commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+                <p>
+                    Conference management involves the meticulous planning, organization, and execution of successful
+                    conferences, seminars, and events. From conceptualization to post-event evaluations, our expert team
+                    handles every aspect, ensuring a seamless experience for all attendees. We pride ourselves on
+                    delivering top-notch services, from venue selection and speaker coordination to registration
+                    management and audio-visual setup. </p>
 
             </div>
 

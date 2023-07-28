@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+ 
+
 <form>
     <header>
         <div class="navbar-fixed">
@@ -6,26 +9,21 @@
                     <details>
                         <summary></summary>
                         <nav class="menu">
-                            <a routerLink="">Home</a>
+                            <a href="#link">Home</a>
                             <a href="#link">Work</a>
                             <a href="#link">Links</a>
                             <a routerLink="/contact">Contact</a>
                             <a href="#about">About</a>
-                            <a routerLink="/editprofile">Profile</a>
-                            <input type="text" id="name" name="name" [(ngModel)]="user.name" readonly>
+                                                    
                         </nav>
+                        <img src="" alt="Bootstrap" width="30" height="24">
+                        
+                        <a id="logo-container" href="#" class="brand-logo white-text" routerLink="/editprofile"><i class="fa-regular fa-user"></i>{{user.name}}</a>
                     </details>
                 </div>
 
             </nav>
         </div>
-
-        <ul class="sidenav indigo lighten-5" id="mobile-demo">
-            <li><a class="waves-effect sidenav-close" href="#fondo">Interiores de lujo</a></li>
-            <li><a class="waves-effect sidenav-close" href="#second-banner">Servicios</a></li>
-            <li><a class="waves-effect sidenav-close" href="#fondo2">Las ciudades</a></li>
-            <li><a class="waves-effect sidenav-close" href="#pie">Find us</a></li>
-        </ul>
     </header>
 
 </form>

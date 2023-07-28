@@ -9,6 +9,10 @@
     overflow: hidden;
     outline: none;
     transition: .7s;
+ 
+}
+#Rooms .card:hover {
+    transform: scale(1.15);
 }
 
 #Rooms .card:hover img {
@@ -26,10 +30,10 @@
 }
 
 #Rooms .card h2:hover {
-    color: #1e7f35;
+    color: #1e247f;
     opacity: .7;
 }
-
+/* 
 #Rooms .card button {
     text-decoration: none;
     text-align: justify;
@@ -39,7 +43,7 @@
     font-size: 15px;
     text-transform: capitalize;
     transition: .5s;
-}
+} */
 
 #Rooms .card a:hover i {
     margin-left: 5px;
@@ -122,4 +126,18 @@
     line-height: 21px;
     font-size: 14px;
 
+}
+button{
+    background: linear-gradient(342deg, rgba(112, 201, 216, 1) 0%, rgba(34, 71, 116, 1) 53%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+    box-shadow: 4px 4px 0 rgb(34, 34, 148);
+    transition:transform 0.2s ,box-shadow 0.2s; 
+}
+button:active{
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 rgb(34, 34, 148);
+   
 }

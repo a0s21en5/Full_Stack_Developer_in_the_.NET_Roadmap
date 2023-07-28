@@ -65,7 +65,7 @@ h3{
     
  
   }
-  .menu a {
+  .menu a ,input{
     padding: 12px 24px;
     margin: 0 16px;
     color: 4px;
@@ -77,10 +77,22 @@ h3{
   .menu a:nth-of-type(1) {
     padding-top: 24px;
   }
+
+  .menu input:nth-of-type(1) {
+    padding-top: 24px;
+  }
   .menu a:nth-last-of-type(1) {
     border-bottom: none;
   }
+
+  .menu input:nth-last-of-type(1) {
+    border-bottom: none;
+  }
   .menu a:hover {
+    filter: brightness(200%);
+  }
+
+  .menu input:hover {
     filter: brightness(200%);
   }
   details::before {
@@ -95,6 +107,14 @@ h3{
   }
   .indigo{
     background: linear-gradient(to top, #2e1aa3 0%, #67a9b9 100%);
+  }
+  #logo-container{
+    margin-left: 1280px;
+    text-decoration: none;
+    font-size: small;
+  }
+  #logo-container i{ 
+    margin-top: 20px; 
   }
 
  
@@ -116,3 +136,8 @@ h3{
     }
   } 
 
+
+
+
+
+  

@@ -24,14 +24,18 @@ export class EditprofileComponent implements OnInit {
 
   GetUserByEmail(email: string | null) {
     this.http.get<User>("https://localhost:44325/api/User/GetUserByEmail?email=" + email).subscribe(result => {
-      console.warn(result)
+      // console.warn(result)
       this.user = result
     })
   }
 
   Editprofile() {
     this.http.put<boolean>("https://localhost:44325/api/User/EditUser?user_Id=" + this.user.user_Id, this.user).subscribe(result => {
-      console.warn(result)
+      // console.warn(result)
+      if (result == true) {
+        alert("Profile Updated Successfully")
+        this.router.navigate(['/main-user-dashboard'])
+      }
     })
   }
 

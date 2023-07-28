@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './Components/login/login.component';
-import { SignUpComponent } from './Components/sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './Components/Userdashboad/header/header.component';
@@ -20,7 +19,6 @@ import { EditprofileComponent } from './Components/Userdashboad/editprofile/edit
     AppComponent,
     HomeComponent,
     LoginComponent,
-    SignUpComponent,
     HeaderComponent,
     FooterComponent,
     MainUserDashboardComponent,
@@ -40,10 +38,6 @@ import { EditprofileComponent } from './Components/Userdashboad/editprofile/edit
       {
         path: 'login',
         component: LoginComponent
-      },
-      {
-        path: 'sign-up',
-        component: SignUpComponent
       },
       {
         path: 'header',
