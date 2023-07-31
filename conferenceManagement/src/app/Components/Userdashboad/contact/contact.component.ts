@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Contact } from 'src/app/Model/contact/contact';
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +10,22 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  contact: Contact
+
+  constructor(private router: Router, private http: HttpClient) {
+    this.contact = new Contact();
+  }
+
+  AddContact() {
+    this.http.post<boolean>("https://localhost:44325/api/User/AddContact", this.contact).subscribe((result) => {
+      console.log(result);
+      this.router.navigate(['/main-user-dashboard']);
+    }, (error) => {
+      console.log(error);
+    })
+  }
+
+  Cancle() {
+    this.router.navigate(['/main-user-dashboard']);
+  }
 }
