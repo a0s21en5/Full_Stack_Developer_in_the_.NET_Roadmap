@@ -25,6 +25,8 @@ export class HeaderComponent implements OnInit {
       console.warn(result)
       this.user = result
     })
-  }
+  } 
+  
+ 
 
 }

@@ -13,7 +13,7 @@ a {
 
 
 .footer {
-  background: linear-gradient(to top, #2e1aa3 0%, #67a9b9 100%);
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
     color: #fff;
 }
 .footer-wave-svg {
@@ -84,7 +84,7 @@ a {
 }
 .footer-call-to-action-button:hover {
     background-color: #fffff2;
-    color: #0024f0;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
 }
 .button:last-of-type {
     margin-right: 0;
@@ -213,7 +213,7 @@ a {
 }
 
 .footer-copyright {
-    background-color: #2528c9;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
     color: #fff;
     padding: 15px 30px;
   text-align: center;

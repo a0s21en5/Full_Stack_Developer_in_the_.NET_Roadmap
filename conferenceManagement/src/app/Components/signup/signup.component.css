@@ -20,7 +20,7 @@
 .screen {		
 	background: linear-gradient(90deg,#2980b9,#2c3e50);		
 	position: relative;	
-	height: 500px;
+	height: 600px;
 	width: 360px;	
 	box-shadow: 0px 0px 24px #2c3e50;
 }

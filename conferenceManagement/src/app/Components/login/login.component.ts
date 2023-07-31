@@ -12,11 +12,11 @@ import { User } from 'src/app/Model/User/user';
 export class LoginComponent {
 
   login: Login
-  user:User
+
 
   constructor(private http: HttpClient, private router: Router) {
     this.login = new Login()
-    this.user = new User();
+ 
   }
 
   Login() {
@@ -34,14 +34,6 @@ export class LoginComponent {
     })
   }
 
-  AddUser(){
-    
-    this.http.post<boolean>('https://localhost:44325/api/User/AddUser',this.user).subscribe(result=>{
-      console.warn(result)
-      if(result){
-        this.router.navigate(['/home'])
-      }
-    })
-  }
+ 
 
 }

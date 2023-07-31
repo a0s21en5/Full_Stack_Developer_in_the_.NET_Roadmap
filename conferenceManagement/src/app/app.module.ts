@@ -13,6 +13,11 @@ import { MainUserDashboardComponent } from './Components/Userdashboad/main-user-
 import { ContactComponent } from './Components/Userdashboad/contact/contact.component';
 import { RoomsboxComponent } from './Components/Userdashboad/roomsbox/roomsbox.component';
 import { EditprofileComponent } from './Components/Userdashboad/editprofile/editprofile.component';
+import { LogoutComponent } from './Components/logout/logout.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { SignupComponent } from './Components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +30,16 @@ import { EditprofileComponent } from './Components/Userdashboad/editprofile/edit
     ContactComponent,
     RoomsboxComponent,
     EditprofileComponent,
+    LogoutComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -38,6 +48,10 @@ import { EditprofileComponent } from './Components/Userdashboad/editprofile/edit
       {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path: 'signup',
+        component: SignupComponent
       },
       {
         path: 'header',
@@ -62,6 +76,10 @@ import { EditprofileComponent } from './Components/Userdashboad/editprofile/edit
       {
         path: 'editprofile',
         component: EditprofileComponent
+      },
+      {
+        path: 'logout',
+        component: LogoutComponent
       },
     ])
   ],

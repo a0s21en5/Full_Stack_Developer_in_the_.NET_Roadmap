@@ -1,6 +1,6 @@
 
 nav {
-    background-color: #2b19ca;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
     color: #fff;
     padding: 10px;
     
@@ -39,8 +39,7 @@ body {
 section {
     width: 100%;
     height: 100vh;
-    background:
-        url('https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background:url('https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
     background-size: cover;
 }
 /* Styling the left floating section */
@@ -120,7 +119,7 @@ section .events ul li .time {
 /* Styling the hover effect
     of events section */
 section .events ul li:hover .time {
-    background: #26619c;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
    
 }
 /* Styling the header of time
@@ -181,9 +180,8 @@ section .events ul li .details a {
 }
 /* Styling the details class's hover effect */
 section .events ul li .details a:hover {
-    background: #124fc0;
     color: #fff;
-    border-color: #155ac2;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
 }
 
 @media (min-width: 768px) {

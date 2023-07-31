@@ -1,30 +1,63 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
- 
+<nav class="navbar navbar-expand-lg navbar-light ">
 
-<form>
-    <header>
-        <div class="navbar-fixed">
-            <nav class="indigo " role="navigation">
-                <div class="toggle">
-                    <details>
-                        <summary></summary>
-                        <nav class="menu">
-                            <a href="#link">Home</a>
-                            <a href="#link">Work</a>
-                            <a href="#link">Links</a>
-                            <a routerLink="/contact">Contact</a>
-                            <a href="#about">About</a>
-                            <a href="">Notification</a>
-                                                    
-                        </nav>
-                        <img src="" alt="Bootstrap" width="30" height="24">
-                        
-                        <a id="logo-container" href="#" class="brand-logo white-text" routerLink="/editprofile"><i class="fa-regular fa-user"></i>{{user.name}}</a>
-                    </details>
-                </div>
+    <div class="container-fluid">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
 
-            </nav>
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+
+                    <a class="nav-link text-light" href="#">Home</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                   
+                    <a class="nav-link text-light" routerLink="/contact">Contact</a>
+
+                </li>
+
+               
+
+                <li class="nav-item">
+
+                   
+                    <a class="nav-link text-light" href="#about">About</a>
+
+                </li>
+
+
+                <li >
+
+                    <a class="nav-link text-light" href="">Notification</a>
+
+                </li>
+
+            </ul>
+
+            <form class="d-flex">
+                
+            
+
+                    <a class="nav-link text-light" routerLink="/logout">Logout</a>     
+
+           
+
+               <a id="logo-container" routerLink="/editprofile">Welcome! {{user.name}}</a>
+           
+            </form>
+
         </div>
-    </header>
 
-</form>
+    </div>
+
+</nav>
