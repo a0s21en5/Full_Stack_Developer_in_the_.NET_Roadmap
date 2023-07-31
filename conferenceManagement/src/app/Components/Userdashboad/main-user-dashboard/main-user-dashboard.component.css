@@ -84,12 +84,17 @@
   h1 {
       font-family: 'Dancing Script', cursive;
       font-size: 80px;
-      margin-bottom: 30px;
+      margin-bottom: 70px;
+
+  }
+  h4{
+    margin-bottom: 30px;
   }
   
   p {
       font-family: 'Open Sans', sans-serif;
       margin-bottom: 30px;
+      font-weight: bold;
   }
   
   button {

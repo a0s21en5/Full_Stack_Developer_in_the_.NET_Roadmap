@@ -9,10 +9,11 @@
     overflow: hidden;
     outline: none;
     transition: .7s;
+    margin-left: 50px;
  
 }
 #Rooms .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 #Rooms .card:hover img {
@@ -33,63 +34,8 @@
     color: #1e247f;
     opacity: .7;
 }
-/* 
-#Rooms .card button {
-    text-decoration: none;
-    text-align: justify;
-    padding: 10px;
-    color: #070707;
-    background-color: #72b381;
-    font-size: 15px;
-    text-transform: capitalize;
-    transition: .5s;
-} */
 
-#Rooms .card a:hover i {
-    margin-left: 5px;
-    transition: .5s;
-}
 
-#room_detils {
-    padding: 50px 0px;
-    text-align: center;
-}
-
-#room_detils h2 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: Helvetica;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-#room_detils p {
-    color: #444141;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: Helvetica;
-    margin-top: 10px;
-}
-
-#room_detils .card {
-    border: none;
-    margin-bottom: 20px;
-}
-
-#room_detils .content {
-    padding: 20px;
-}
-
-/*-----pricing----------*/
-.price_opt {
-    position: relative;
-
-}
-
-.price_opt img {
-    width: 100%;
-}
 
 #about {
     padding: 120px 0px;
@@ -138,6 +84,5 @@ button{
 }
 button:active{
     transform: translateX(4px) translateY(4px);
-    box-shadow: 0 0 0 rgb(34, 34, 148);
-   
+    box-shadow: 0 0 0 rgb(34, 34, 148);  
 }
