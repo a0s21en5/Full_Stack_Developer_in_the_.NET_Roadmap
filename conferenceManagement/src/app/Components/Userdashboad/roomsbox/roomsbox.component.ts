@@ -12,7 +12,7 @@ export class RoomsboxComponent {
   displayAllRoom: ConferenceRoom[] = [];
 
   constructor(private http: HttpClient) {
-    this.http.get<ConferenceRoom[]>("https://localhost:44325/api/User/DisplayAllRoom").subscribe(result => {
+    this.http.get<ConferenceRoom[]>("https://localhost:7227/api/User/DisplayAllRoom").subscribe(result => {
       // console.warn(result)
       this.displayAllRoom = result;
     })

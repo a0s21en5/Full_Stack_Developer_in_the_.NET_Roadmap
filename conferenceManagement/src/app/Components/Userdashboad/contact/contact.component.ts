@@ -17,7 +17,7 @@ export class ContactComponent {
   }
 
   AddContact() {
-    this.http.post<boolean>("https://localhost:44325/api/User/AddContact", this.contact).subscribe((result) => {
+    this.http.post<boolean>("https://localhost:7227/api/User/AddContact", this.contact).subscribe((result) => {
       console.log(result);
       this.router.navigate(['/main-user-dashboard']);
     }, (error) => {

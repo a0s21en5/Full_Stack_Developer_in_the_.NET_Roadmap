@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Login } from 'src/app/Model/Login/login';
 import { User } from 'src/app/Model/User/user';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,7 @@ export class LoginComponent {
   }
 
   Login() {
-    this.http.post<User>("https://localhost:44325/api/Login/loginUser", this.login).subscribe(result => {
+    this.http.post<User>("https://localhost:7227/api/Login/loginUser", this.login).subscribe(result => {
       
     // console.warn(result)
 
@@ -29,6 +30,11 @@ export class LoginComponent {
 
       localStorage.setItem('UserEmail', jsonToken["Email"]);
       if(result){
+        Swal.fire(
+          'User Login',
+          'Login Successfully',
+          'success'
+        )
         this.router.navigate(['/main-user-dashboard'])
       }
     })

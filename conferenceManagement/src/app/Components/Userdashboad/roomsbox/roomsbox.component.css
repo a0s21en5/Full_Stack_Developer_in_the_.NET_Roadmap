@@ -45,33 +45,6 @@ h2{
     opacity: .7;
 }
 
-#about {
-    padding: 90px 0px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg,#2980b9,#2c3e50);	
-}
-
-#about h2 {
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-#about .left p,
-#about p {
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    font-size: 15px;
-}
 
 button {
     background: linear-gradient(90deg,#2980b9,#2c3e50);	

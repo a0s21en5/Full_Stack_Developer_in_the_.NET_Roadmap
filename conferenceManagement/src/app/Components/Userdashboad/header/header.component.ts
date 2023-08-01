@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   }
 
   GetUserByEmail(email: string | null) {
-    this.http.get<User>("https://localhost:44325/api/User/GetUserByEmail?email=" + email).subscribe(result => {
+    this.http.get<User>("https://localhost:7227/api/User/GetUserByEmail/" + email).subscribe(result => {
       console.warn(result)
       this.user = result
     })

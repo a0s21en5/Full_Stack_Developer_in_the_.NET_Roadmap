@@ -3,6 +3,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/Model/User/user';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-editprofile',
@@ -23,17 +24,21 @@ export class EditprofileComponent implements OnInit {
 
 
   GetUserByEmail(email: string | null) {
-    this.http.get<User>("https://localhost:44325/api/User/GetUserByEmail?email=" + email).subscribe(result => {
+    this.http.get<User>("https://localhost:7227/api/User/GetUserByEmail/" + email).subscribe(result => {
       // console.warn(result)
       this.user = result
     })
   }
 
   Editprofile() {
-    this.http.put<boolean>("https://localhost:44325/api/User/EditUser?user_Id=" + this.user.user_Id, this.user).subscribe(result => {
+    this.http.put<boolean>("https://localhost:7227/api/User/EditUser?user_Id=" + this.user.user_Id, this.user).subscribe(result => {
       // console.warn(result)
       if (result == true) {
-        alert("Profile Updated Successfully")
+        Swal.fire(
+          'Edit Profile',
+          'Edit Successfully',
+          'success'
+        )
         this.router.navigate(['/main-user-dashboard'])
       }
     })
