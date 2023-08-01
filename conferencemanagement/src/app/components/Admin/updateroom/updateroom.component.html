@@ -1,0 +1,45 @@
+<div class="container">
+
+    <form class="room-form">
+
+      <div class="form-group">
+
+        <label for="roomName">Room Name:</label>
+
+        <input type="text" class="form-control" [(ngModel)]="room.roomName" id="roomName" name="roomName" >
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="capacity">Capacity:</label>
+
+        <input type="number" class="form-control" [(ngModel)]="room.capacity" id="capacity" name="capacity">
+
+      </div>
+
+      <div class="form-group">
+
+        <div class="form-check">
+
+          <input type="checkbox" class="form-check-input" [(ngModel)]="room.isAVRoom" id="isAVRoom" name="isAVRoom">
+
+          <label class="form-check-label" for="isAVRoom">AV Room:</label>
+
+        </div>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="image">Image URL:</label>
+
+        <input type="text" class="form-control" [(ngModel)]="room.image" id="image" name="image">
+
+      </div>
+
+      <button type="submit" (click)="UpdateRoom()" class="btn btn-primary">Save</button>
+
+    </form>
+
+  </div>

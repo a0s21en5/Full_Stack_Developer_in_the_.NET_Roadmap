@@ -1,0 +1,47 @@
+.container {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+  }
+
+ 
+
+  .room-form {
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+  }
+
+ 
+
+  .form-group {
+
+    margin-bottom: 20px;
+
+  }
+
+ 
+
+  .form-check-label {
+
+    margin-left: 5px;
+
+  }
+
+ 
+
+  .btn-primary {
+
+    margin-top: 10px;
+
+  }

@@ -1,0 +1,17 @@
+.nav-item
+{
+    list-style-type:none;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-right:20px;
+    margin-left:0;
+    margin-top: 10px;
+
+
+}
+.div-table{
+    margin-top:20px;
+    
+    
+}

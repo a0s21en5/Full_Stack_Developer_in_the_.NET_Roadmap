@@ -1,0 +1,38 @@
+<app-admindashboard></app-admindashboard>
+<div class="div-table">
+    <table class="table table-primary table-hover">
+      <thead>
+        <tr>
+          <th scope="col">RequestId</th>
+          <th scope="col">UserId</th>
+          <th scope="col">RoomId</th>
+          <th scope="col">Date</th>
+          <th scope="col">TimeSlot</th>
+          <th scope="col">Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of allPendingRequest">
+          <td>{{item.requestId}}</td>
+          <td>{{item.userId}}</td>
+          <td>{{item.roomId}}</td>
+          <td>{{item.date}}</td>
+          <td>{{item.timeSlot}}</td>
+          <td>{{item.status}}</td>
+
+          <td>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <!--<a class="nav-link text-dark" [routerLink]="['/dashboard']">All User</a>-->
+              <button type="button" class="btn btn-success" [routerLink]="">Approve</button>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <!--<a class="nav-link text-dark" [routerLink]="['/dashboard']">All User</a>-->
+              <button type="button" class="btn btn-danger" [routerLink]="">Reject</button>
+            </li>
+          </td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div>
