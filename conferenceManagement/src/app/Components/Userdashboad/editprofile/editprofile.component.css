@@ -6,7 +6,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding box shadow */
-    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* Adding linear gradient background */
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	 /* Adding linear gradient background */
  
 }
 
@@ -34,7 +34,7 @@ input {
 
 input[type="submit"] {
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #141414;
     color: white;
     border: none;
     padding: 10px;
@@ -42,5 +42,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #171718;
 }
