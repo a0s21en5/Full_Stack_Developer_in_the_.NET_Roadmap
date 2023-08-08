@@ -1,0 +1,379 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.hero {
+    background-image: url('https://ashishsahu.me/img/port1.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px #333;
+}
+
+.info-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.feature img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+} */
+
+nav {
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
+    color: #fff;
+    padding: 10px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+/* Styling section, giving background
+    image and dimensions */
+section {
+    width: 100%;
+    height: 100vh;
+    background:url('https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+}
+/* Styling the left floating section */
+section .leftBox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+/* Styling the background of
+    left floating section */
+section .leftBox .content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: .5s;
+}
+/* Styling the hover effect
+    of left floating section */
+section .leftBox .content:hover {
+    background: #26619c;
+}
+/* Styling the header of left
+    floating section */
+section .leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+/* Styling the paragraph of
+    left floating section */
+section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+/* Styling the three events section */
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+/* Styling the links of
+the events section */
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+/* Styling the lists of the event section */
+section .events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+/* Styling the time class of events section */
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+/* Styling the hover effect
+    of events section */
+section .events ul li:hover .time {
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
+   
+}
+/* Styling the header of time
+    class of events section */
+section .events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+/* Styling the texts of time
+class of events section */
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+
+/* Styling the details
+class of events section */
+section .events ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+/* Styling the header of the
+details class of events section */
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+/* Styling the lists of details
+class of events section */
+section .events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* Styling the links of details
+class of events section */
+section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid #262626;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+/* Styling the details class's hover effect */
+section .events ul li .details a:hover {
+    color: #fff;
+    background: linear-gradient(90deg,#2980b9,#2c3e50);	
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    section .leftBox,
+    section .events {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    section .events ul {
+        position: relative;
+        top: 0;
+        transform: none;
+        margin: 0;
+        padding: 40px;
+    }
+
+    section .events ul li {
+        height: 200px;
+    }
+
+    section .events ul li .time,
+    section .events ul li .details {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    /* Responsive font size and line height for .time h2 */
+    section .events ul li .time h2 {
+        font-size: 60px;
+        line-height: 30px;
+        
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .leftBox,
+    section .events {
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+
+    section .events ul {
+        position: relative;
+        top: 0;
+        transform: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    section .events ul li {
+        height: auto;
+    }
+
+    section .events ul li .time,
+    section .events ul li .details {
+        width: 100%;
+        height: 30%;
+        float: none;
+    }
+
+    /* Responsive font size and line height for .time h2 on mobile */
+    section .events ul li .time h2 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+}
+
+
+/* new code for home in admin */
+
