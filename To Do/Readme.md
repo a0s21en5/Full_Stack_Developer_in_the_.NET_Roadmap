@@ -80,10 +80,12 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
-app.UseSwagger();  // Enable Swagger UI for API documentation
+// Enable Swagger UI for API documentation
+app.UseSwagger();  
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API Name V1");
 });
 
-app.UseRouting();  // Enable routing
+// Enable routing
+app.UseRouting();  
