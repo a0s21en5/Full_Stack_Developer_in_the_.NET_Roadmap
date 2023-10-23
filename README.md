@@ -3,7 +3,7 @@
 Becoming a full-stack developer in the .NET (C#) ecosystem involves mastering front-end and back-end development using the Microsoft technology stack. 
 Below is a roadmap to help you navigate your journey toward becoming a proficient .NET full-stack developer:
 
-1- C# Proficiency: Master the C# language.
+- C# Proficiency: Master the C# language.
 2- Object-Oriented Programming (OOP): Master OOP basic pillars
 3- Design Principles and SOLID: SRP, OCP, etc
 4- Web Basics: HTML, CSS, JavaScript.
